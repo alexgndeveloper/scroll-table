@@ -1,0 +1,10 @@
+.table-container {
+    height: 70vh;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.loading {
+    text-align: center;
+    padding: 10px;
+}
