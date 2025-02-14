@@ -19,7 +19,7 @@ export class AppComponent {
   page = 1;
   loading = false;
 
-  constructor(private dataService: DataService) {}
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
     this.loadMore();

@@ -28,9 +28,11 @@
     </ng-container>
 
     <!-- Header y Rows -->
-    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
 
   <div class="text-center font-bold p-2" *ngIf="loading">Cargando datos...</div>
 </div>
+
+<div class="text-center p-2">Filas Totales: <span class="font-bold">{{dataSource.data.length}}</span></div>
