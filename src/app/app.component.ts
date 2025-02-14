@@ -11,8 +11,7 @@ import { DataService } from './data.service';
     MatTableModule,
     ScrollingModule
   ],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  templateUrl: './app.component.html'
 })
 export class AppComponent {
   displayedColumns: string[] = ['created', 'state', 'number', 'title'];
